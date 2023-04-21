@@ -9,7 +9,7 @@ What is ruby
 
 
 <!-- Example to print each class of instance -->
-Screenshot from 2023-04-21 22-35-13.png
+
 irb(main):002:0> a.class
 => Integer
 irb(main):003:0> a = 'Josue'
