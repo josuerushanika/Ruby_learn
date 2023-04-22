@@ -262,10 +262,10 @@ class ExampleClass
       puts 'Helllo Friends, Welcome to the Ruby on Rails bootcamp'
     end
  end
-#    calling instance class
+#  calling instance class
  obj1 = ExampleClass.new
  obj1.print_hello
-#    calling class method
+#  calling class method
 
 ExampleClass.class_method_example
 
@@ -275,3 +275,97 @@ ExampleClass.class_method_example
 ####################################
 
 Create a file student.rb
+
+class Student
+  def initialize(name, email, contact)
+      #Initialize methode can be consider as constructure in ruby
+      @name = name
+      @email = email
+      @contact = contact
+  end
+
+  def print_name
+    ## String interconnection
+    #old
+      puts @name
+      #new
+      puts "Name = #{@name}"
+  end
+
+  def print_email
+      puts @email
+      puts "Name = #{@email}"
+  end
+
+  def print_contact
+      puts @contact
+      puts "Name = #{@contact}"
+  end
+end
+
+s1 = Student.new('Ravi Singh', 'josuerushanika@gmail.com','+243977308096')
+
+s1.print_name
+s1.print_email
+s1.print_contact
+
+### Question Time ###
+
+1. What is a class in Ruby?
+2. What is an object in Ruby?
+3. How to define a class in Ruby?
+4. How to instantiate a class?
+5. What is the difference between class method and instance methods?
+6. What is the difference between instance method and instace variable?
+7. what is initialize methode in Ruby?
+8. How to invoke/call instace methods in Ruby?
+9. Ho to invoke/call class methods in Ruby?
+10. Is it possible to define initialize method without passing any argument?
+
+
+
+####################################
+### Getter and setter method in ####
+###      In Ruby                ####
+####################################
+
+__A getter method: is a method that gets a value of an instance variable (@abc)
+__Without a getter method you can not retrieve a value of an instace variable outside
+the class the instance variable is instantiated from.
+
+class GetterSetter
+  def initialize(name)
+      @name = name
+  end
+
+  def name
+      puts @name
+  end
+
+  def name=(name)
+      @name = name
+  end
+end
+
+# instantiate a class
+obj1 = GetterSetter.new('Ravi Singh')
+obj1.name
+obj1.name = "Alex"
+obj1.name
+
+
+
+__Setter Method : is a method that sets a value of an instance variable.
+__Without a setter method, you can not assign a value to an instance variable outside its class.
+
+
+Question
+
+1.What are getter method in Ruby?
+2.What are setter method in Ruby?
+3.Does getter method requires an attribute to retrieve the value of an instance variable ?
+4.Does setter method requires an attribute to update the value of an instance variable ?
+5.Is it possible to get the value of an instance variable without have getter method in your class?
+6. Is it possible to set the new value to an instance variable without have setter method in your class?
+
+
