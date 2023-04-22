@@ -369,3 +369,107 @@ Question
 6. Is it possible to set the new value to an instance variable without have setter method in your class?
 
 
+####################################
+###    attr_reader in Ruby      ####
+###                             ####
+####################################
+Accessors are way to create getter and setter methods without explicity defining them in a class.
+
+__There 3 types of Accessors are in Ruby
+1. attr_reader
+2.attr_writer
+3.attr_accessor
+
+
+1.attr_reader : attr_reader automatically generates a getter method for each given attribute.
+
+Things to remember
+**You can only access those instance variable wich you have passed to attr_reader
+**You can only use attr_reader in a class. Using attr_reader outside a class will give you
+a NoMethodError
+
+1.What is accessors in Ruby?
+2.What is attr_reader?
+3.Can we call attr_reader without any argument?
+4.Do we need to put setter method even if we have used attr_reader accessor in our program?
+5.What is the advantage of using attr_reader in your program ?
+6.Can we use attr_reader outside a class?
+
+
+####################################
+###    Attr_writer in Ruby      ####
+###                             ####
+####################################
+
+In Ruby, attr_writer is a shorthand method for defining a 
+setter method for an instance variable in a class. 
+It is a convenient way to generate a setter method for a class
+ attribute without having to write the method explicitly.
+
+Here is an example of how to use attr_writer:
+
+Convert our code with attributes writer
+
+class Student
+  attr_reader :name, :email, :contact
+  attr_writer :name, :email, :contact
+  def initialize(name, email, contact)
+      @name = name
+      @email = email
+      @contact = contact
+  end
+end
+
+s1 = Student.new('Josue Rushanika', 'www.google.com', '+243977308096')
+
+s1.name = 'Alex'
+s1.email = 'josue@gmail.com'
+s1.contact = '0977308096'
+
+puts s1.name
+puts s1.email
+
+
+Things to remember
+
+You can only update the value of those instance variable wich you have passed to Attr_writer.
+You can only use attr_writer in a class. using attr_writer outside a class will give you a NoMethodError.
+
+---Question---
+
+1.What is attr_writer
+2.Can we call attr_writer without any argument ?
+3.Do we need to put getter method even if we have used attr_writer accessor in our program?
+4.What is the advantage of using attr_writer in your ruby program ?
+5.Can we use attr_writer outside the class?
+6.When we need to use attr_reader with attr_writer?
+7.Is is necessary to use both attr_reader and attr_writer both in a class ?
+
+   ###################################
+9. ###### attr_accessor in Ruby ######
+   ###################################
+
+   In Ruby, attr_accessor is a built-in method that allows you 
+   to define getter and setter methods for instance variables with a single line of code.
+
+   1.What is attr_accessor?
+   2. Can we call attr_accessor without any argument?
+   3. Do we need to put getter and setter method even if we have used attr_accessor method
+    in our program?
+   4. What is the advantage of using attr_accessor in your program?
+   5.can we use attr_accessor outside the class ?
+   
+   
+  ###################################
+  ######     10     ARRAY      ######
+  ###################################
+
+Array in general is a data structure wich can be defined as collection of similar types of data.
+But in Ruby an array is not a type,it is just an object of Array class.so an array in Ruby can have
+any type of data in it.
+**normal array arr = [1,2,3,4]
+** in Ruby arr = [1,2,3,nil,true,false,"String",[1,2,3,4]]
+
+
+
+   

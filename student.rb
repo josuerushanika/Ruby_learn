@@ -1,4 +1,5 @@
 class Student
+   # attr_reader :name, :email, :contact
     def initialize(name, email, contact)
         #Initialize methode can be consider as constructure in ruby
         @name = name
