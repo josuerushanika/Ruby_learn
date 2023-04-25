@@ -50,7 +50,6 @@ R/ Variable are are nothing but the memory location where we can store some valu
 
 2.What are variable in Ruby?
 R/Variable are object of some class 
-
 3.What are constants in Ruby?
 Constant is somethings we can not change once declared 
 and constant must start with capital letter in ruby
@@ -61,7 +60,7 @@ A = 11 // constant in ruby
 5.How to get memory address of a variable in Ruby?
 
 
-<!-- -------------------------- -->
+<!------------------------------------>
 
 3.TYPES OF VARIABLE IN RUBY
 
@@ -366,7 +365,7 @@ Question
 3.Does getter method requires an attribute to retrieve the value of an instance variable ?
 4.Does setter method requires an attribute to update the value of an instance variable ?
 5.Is it possible to get the value of an instance variable without have getter method in your class?
-6. Is it possible to set the new value to an instance variable without have setter method in your class?
+6.Is it possible to set the new value to an instance variable without have setter method in your class?
 
 
 ####################################
@@ -377,8 +376,8 @@ Accessors are way to create getter and setter methods without explicity defining
 
 __There 3 types of Accessors are in Ruby
 1. attr_reader
-2.attr_writer
-3.attr_accessor
+2. attr_writer
+3. attr_accessor
 
 
 1.attr_reader : attr_reader automatically generates a getter method for each given attribute.
